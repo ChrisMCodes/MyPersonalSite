@@ -1,137 +1,149 @@
 <!DOCTYPE html>
 <html>
-	<head>
-    
-<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
 
-		<style>
-      			h1 {
-			    color: red;
-			    font-family: monospace;
-			    text-align: center;
-			    font-size: 48px;
-			}
-			h2{
+<head>
 
-			    margin: 20px 20px;
-          		    padding: 20px 10px;
-			    text-align: center;				
-			
-			}
-			.blue-text{
-			    color: blue;
-			}
-			
-			.italics {
-				font-style: italic;
-			}
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
 
-			#green-border{
-          			border-color: green;
-          			border-width: 5px;
-          			border-style: solid;
-          			font-family: 'Baloo Chettan 2', cursive;
-				text-align: justify;
-				background-color: rgba(100, 25, 75, 0.1);
-				padding: 10px;
-				box-shadow: 10px 5px 5px rgba(200, 250, 10, 0.19);
-  			}
+	<style>
+		h1 {
+			color: red;
+			font-family: monospace;
+			text-align: center;
+			font-size: 48px;
+			transition: transform 3s, font-size 0.5s, background-color 2s, color 2.5s;
+		}
 
-			#const-image{
-				display: block;
-  				margin-left: auto;
-  				margin-right: auto;
-				max-width: 15%;
-				max-height: 15%
-			}
-		</style>
-		<title>Chris M's Homepage</title>
-	</head>
+		h1:hover {
+			transform: scale(1.5);
+			background-color: rgba(0, 0, 0, 0.5);
+			color: aliceblue;
+		}
 
-	<body>
-		<header>
-			<h1>Chris is re-learning HTML/CSS!</h1>
-			<h2 class="blue-text"><strong>Bonus:</strong> Chris hopes to learn JavaScript...<span class="italics">finally!</span></h2>
-		</header>	
+		h2 {
 
-		<a href = "#lists">Go to lists</a>	
-		<hr>
-		<img src="under_const.png" alt="This page is under construction" id="const-image">
-		<hr>
+			margin: 20px 20px;
+			padding: 20px 10px;
+			text-align: center;
 
-		<main>
+		}
+
+		.blue-text {
+			color: blue;
+		}
+
+		.italics {
+			font-style: italic;
+		}
+
+		#green-border {
+			border-color: green;
+			border-width: 5px;
+			border-style: solid;
+			font-family: 'Baloo Chettan 2', cursive;
+			text-align: justify;
+			background-color: rgba(100, 25, 75, 0.1);
+			padding: 10px;
+			box-shadow: 10px 5px 5px rgba(200, 250, 10, 0.19);
+		}
+
+		#const-image {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 15%;
+			max-height: 15%
+		}
+	</style>
+	<title>Chris M's Homepage</title>
+</head>
+
+<body>
+	<header>
+		<h1>Chris is re-learning HTML/CSS!</h1>
+		<h2 class="blue-text"><strong>Bonus:</strong> Chris hopes to learn JavaScript...<span
+				class="italics">finally!</span></h2>
+	</header>
+
+	<a href="#lists">Go to lists</a>
+	<hr>
+	<img src="under_const.png" alt="This page is under construction" id="const-image">
+	<hr>
+
+	<main>
 		<h3>Bio</h3>
 		<p id="green-border">
 			This section will eventually be full of biographical info!
 			For now, I'll just say that I'm learning and that this site is
 			a work in progress!
-		<hr>
+			<hr>
 		</p>
 
 		<!--Some fun features just to play around and remind me what I want to have on this page-->
 		<br>
 		<a id="lists">
-			
+
 			<form action="#">
 				<label for="bio">
-				<input type = "checkbox" id="bio" name="to do" value="bio" checked>Bio
+					<input type="checkbox" id="bio" name="to do" value="bio" checked>Bio
 				</label>
-					<p>List of things to say:</p>
-					<ul>
-						<li class = "blue-text">Why I code</li>
-						<li class = "blue-text">How I learned</li>
-						<li class = "blue-text">Where I live</li>
-						<li class = "blue-text">Where I work</li>
-						<li class = "blue-text">What my goals are</li>
-					</ul>
+				<p>List of things to say:</p>
+				<ul>
+					<li class="blue-text">Why I code</li>
+					<li class="blue-text">How I learned</li>
+					<li class="blue-text">Where I live</li>
+					<li class="blue-text">Where I work</li>
+					<li class="blue-text">What my goals are</li>
+				</ul>
 				<br>
 
 
 				<label for="CV">
-				<input type = "checkbox" id="CV" name="to do" value="CV">CV
+					<input type="checkbox" id="CV" name="to do" value="CV">CV
 				</label>
 				<br>
 
 
 				<label for="links">
-				<input type = "checkbox" id="links" name="to do" value="links">Links
+					<input type="checkbox" id="links" name="to do" value="links">Links
 				</label>
 				<br>
 
 
 				<label for="game samples">
-				<input type = "checkbox" id="game samples" name="to do" value="game samples">Game samples
+					<input type="checkbox" id="game samples" name="to do" value="game samples">Game samples
 				</label>
 				<br>
 
 
 				<label for="graphics">
-				<input type = "checkbox" id="graphics" name="to do" value="graphics">Graphics
+					<input type="checkbox" id="graphics" name="to do" value="graphics">Graphics
 				</label>
 				<br>
 
 
 
 				<label for="code samples">
-				<input type = "checkbox" id="code samples" name="to do" value="code samples">Code Samples
+					<input type="checkbox" id="code samples" name="to do" value="code samples">Code Samples
 				</label>
 				<br>
 
 
 				<label for="style">
-				<input type = "checkbox" id="style" name="to do" value="style">Style
+					<input type="checkbox" id="style" name="to do" value="style">Style
 				</label>
 				<br>
 
 
 
 				<label for="input submissions">
-				<input type = "checkbox" id="input submissions" name="to do" value="input submissions">An input box that goes somewhere
+					<input type="checkbox" id="input submissions" name="to do" value="input submissions">An input box
+					that goes somewhere
 				</label>
 			</form>
-			</a>
+		</a>
 
-		</main>
-		
-	</body>
+	</main>
+
+</body>
 </html>
